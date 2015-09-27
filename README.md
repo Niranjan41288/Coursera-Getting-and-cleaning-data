@@ -1,33 +1,17 @@
 # Coursera-Getting-and-cleaning-data
-Quiz
-
-fileurl<-
+Quiz 1
 
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv?accessType=DOWNLOAD",destfile = "E:/Study_Materials/Coursera/Getting_Started_and_Cleaning/hid.csv")
-
-list.files
-
 
 da<-read.csv("E:/Study_Materials/Coursera/Getting_Started_and_Cleaning/hid.csv")
 
 head(da$VAL)
 
 valu<-subset(da,da$VAL>=24,na.rm=T)
-
-
 length(valu$VAL)
 
+#Q.3 Downloading excel file
 
-
-# Q.2
-
-da$FES
-
-
-1000000-1000000
-
-
-#Q.3 Downloadin excel file
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FDATA.gov_NGAP.xlsx?accessType=DOWNLOAD",destfile="E:/Study_Materials/Coursera/Getting_Started_and_Cleaning/gov.xslx")
 
 install.packages("xlsx")
