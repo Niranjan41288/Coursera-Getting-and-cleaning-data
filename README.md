@@ -1,5 +1,4 @@
-# Coursera-Getting-and-cleaning-data
-Quiz 1
+# downloading data from differnet sources and cleaning data
 
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv?accessType=DOWNLOAD",destfile = "E:/Study_Materials/Coursera/Getting_Started_and_Cleaning/hid.csv")
 
@@ -10,7 +9,7 @@ head(da$VAL)
 valu<-subset(da,da$VAL>=24,na.rm=T)
 length(valu$VAL)
 
-#Q.3 Downloading excel file
+# Downloading excel file
 
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FDATA.gov_NGAP.xlsx?accessType=DOWNLOAD",destfile="E:/Study_Materials/Coursera/Getting_Started_and_Cleaning/gov.xslx")
 
@@ -24,7 +23,7 @@ dat<-gov[nrow=18:23,ncol=7:15]
   
 sum(dat$Zip*dat$Ext,na.rm=T)
 
-#Q.4 read xml
+#read xml
 install.packages("xml")
 library(XML)
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml?accessType=DOWNLOAD",destfile="E:/Study_Materials/Coursera/Getting_Started_and_Cleaning/amer.xml")
